@@ -4,17 +4,18 @@ import {
   CardTitle, CardSubtitle, Row, Col, Container
 } from 'reactstrap';
 
-function CharCard(props) {
-    return (
+function CharCard({ character }) {
+  const {name, birth_year, gender, eye_color, skin_color } = character; 
+  return (
         <Container>
           <Col xs="6" md="4" xl="3">
             <Card>
             <CardBody>
-               <CardTitle>{props.character.name}</CardTitle>
-               <CardSubtitle>Birth Year: {props.character.birth_year}</CardSubtitle>
-               <CardText>Gender: {props.character.gender}</CardText>
-               <CardText>Eye Color: {props.character.eye_color}</CardText>
-               <CardText>Skin Color: {props.character.skin_color}</CardText>
+               <CardTitle>{name}</CardTitle>
+               <CardSubtitle>Birth Year: {birth_year}</CardSubtitle>
+               <CardText>Gender: {gender}</CardText>
+               <CardText>Eye Color: {eye_color}</CardText>
+               <CardText>Skin Color: {skin_color}</CardText>
             </CardBody>
             </Card>
           </Col>
