@@ -20,8 +20,7 @@ function CharCard({ character }) {
             </Card>
           </Col>
         </Container>
-      
-    )
+  )
 }
 
 export default CharCard;
